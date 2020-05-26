@@ -1,0 +1,15 @@
+{
+  "name": "war",
+  "version": "1.0.0",
+  "description": "simulation of the card game war",
+  "main": "war.js",
+  "dependencies": {
+    "papaparse": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
