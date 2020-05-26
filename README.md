@@ -1,13 +1,18 @@
 # war.js
 node simulation of classic card game war
 
-## dependencies
-* install node dependencies using `npm i`
-* for speed, install [GNU parallel](https://www.gnu.org/software/parallel/) to add multithreading
+## install
+* `git clone https://github.com/uotw/war.js.git`
+* `cd war.js`
+* `npm i`
+
+* for speed, install [GNU parallel](https://www.gnu.org/software/parallel/) to add multithreading. it's available using apt-get on linux, or brew on Mac OS.
 
 ## run the simulation
 * if you have installed parallel (recommended), you can run the simulation with the `simulate.sh` script
-* otherwise, run ./iterate.sh
+* otherwise, run `iterate.sh`
+* change the `iterations` script variable in either script to change the number of games to simulate
+
 
 ## statistics
 
