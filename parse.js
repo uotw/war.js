@@ -14,6 +14,8 @@ fs.readFile(filename, 'utf8', function(err, file) {
 var     onewins=0,
         twowins=0,                
 	warstotal=0,
+	doublewarstotal=0,
+	triplewarstotal=0,
         inf=0;
 
 function processData(item,index) {
@@ -23,6 +25,8 @@ function processData(item,index) {
 		var winner = item[0];
 		var hands = item[1];
 		var wars = item[2];
+		var doublewars = item[3];
+		var triplewars = item[4];
 		
 		if(winner==1){
 			onewins++;
@@ -32,7 +36,12 @@ function processData(item,index) {
 		if(wars>0){
 			warstotal++;
 		}
-
+		if(doublewars>0){
+			doublewarstotal++;
+		}
+		if(triplewars>0){
+			triplewarstotal++;
+		}
 		if(hands==10000){
 			inf++
 		}
@@ -44,7 +53,7 @@ function processData(item,index) {
 }
 
 function report(total){
-	var perconewins = 100*onewins/(onewins+twowins);
-	var perctwowins = 100-perconewins;
-	console.log("hand one wins "+perconewins+", two wins " + perctwowins+ ", wars "+warstotal+"/"+total);
+	var perconewins = (100*onewins/(onewins+twowins)).toFixed(1);
+	var perctwowins = (100-perconewins).toFixed(1);
+	console.log("hand one wins "+perconewins+"%, two wins " + perctwowins+ "%, wars "+warstotal+"/"+total + ", double wars "+doublewarstotal+"/"+ total+ ", "+"triple wars "+triplewarstotal+"/"+total);
 }

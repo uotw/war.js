@@ -213,11 +213,12 @@ function play() {
 
 
 function report() {
-    if (handone.length == 0) {
-        console.log("2," + hands + "," + wars);
-    } else {
-        console.log("1," + hands + "," + wars);
-    }
+    	if (handone.length == 0) {
+		var winner = 1;
+	} else {
+		var winner = 2;
+	}
+        console.log(winner+"," + hands + "," + wars + "," + doublewars + "," + triplewars);
 }
 
 deal();
