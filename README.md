@@ -23,6 +23,6 @@ node simulation of classic card game war
 * 4%	games have at least 1 triple war
 * 0.02%	games will end without even a single war
 * 250	average plays to win
-* 189	50% plays to win (median)
+* 189	median plays to win
 
 ![histogram of plays to win war](https://www.sonoclipshare.com/playstowin.svg)
