@@ -14,8 +14,10 @@ node simulation of classic card game war
 
 
 ## speed
-* 10,000 iterations run with multithreading active:
-* * Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
+speed scales by the number of iterations requested
+10,000 iterations run with multithreading active:
+* 231 seconds Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz (4 cores)
+* 55 seconds Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz (14 cores)
 
 ## statistics
 
