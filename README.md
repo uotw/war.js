@@ -5,7 +5,7 @@ node simulation of classic card game war
 * `git clone https://github.com/uotw/war.js.git`
 * `cd war.js`
 * `npm i`
-* for speed, install [GNU parallel](https://www.gnu.org/software/parallel/) to add multithreading. it's available using apt-get on linux, or brew on Mac OS.
+* install [GNU parallel](https://www.gnu.org/software/parallel/) to add multithreading. it's available using `apt-get install parallel` on linux, or `brew install parallel` on Mac OS.
 
 ## run the simulation
 * run the simulation with the `simulate.sh` script
