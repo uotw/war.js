@@ -13,6 +13,10 @@ node simulation of classic card game war
 * in `war.js`, `deal()` will deal randomly. comment this line and uncomment `dealaces()`, `dealacesone()`, or `dealfacecards()` to give 4 aces, 3 aces, or all face cards to player one - randomizing the other cards.
 
 
+## speed
+* 10,000 iterations run with multithreading active:
+* * Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
+
 ## statistics
 
 * 97%	chance of winning if you have all face cards
