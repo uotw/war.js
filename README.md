@@ -20,7 +20,7 @@ node simulation of classic card game war
 * 64%	chance of winning if you have 3 aces
 * 54%	games have at least 1 double war
 * 4%	games have at least 1 triple war
-* 0.02%	games will end without even a single war
+* 0.03%	games will end without even a single war
 * 250	average plays to win
 * 189	median plays to win
 
