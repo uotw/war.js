@@ -10,7 +10,7 @@ node simulation of classic card game war
 ## run the simulation
 * run the simulation with the `simulate.sh` script
 * change the `iterations` script variable in `simulate.sh` to change the number of games to simulate
-* in `war.js`, `deal()` will deal randomly. comment this line and uncomment `dealaces()`, `dealacesone()`, or `dealfacecards()` to give 4 aces, 3 aces, or all face cards to one of the players - randomizing the other cards.
+* in `war.js`, `deal()` will deal randomly. comment this line and uncomment `dealaces()`, `dealacesone()`, or `dealfacecards()` to give 4 aces, 3 aces, or all face cards to player one - randomizing the other cards.
 
 
 ## statistics
