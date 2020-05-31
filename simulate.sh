@@ -5,7 +5,7 @@ handstotal=0
 doublewarstotal=0;
 inf=0
 index=1
-iterations=10000
+iterations=1000000
 parallelcheck=$(command -v parallel)
 
 if [ ! -z "$parallelcheck" ]

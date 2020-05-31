@@ -25,7 +25,7 @@ function processData(item,index) {
 		//console.log(item);
 		var winner = item[0];
 		//console.log(item[1]);
-		hands.push(item[1]);
+		hands.push(parseInt(item[1]));
 		var wars = item[2];
 		var doublewars = item[3];
 		var triplewars = item[4];
@@ -53,18 +53,24 @@ function processData(item,index) {
 	}
 	
 }
-
+/*
 function median(values){
 
-	values.sort(function(a,b) {
- 		return a - b;
-	});
+	values.sort();
 	let lowMiddle = Math.floor( (values.length - 1) / 2);
 	let highMiddle = Math.ceil( (values.length - 1) / 2);
 	let median = ( values[lowMiddle] + values[highMiddle]) / 2;
 	return median;
 
 }
+*/
+
+const median = arr => {
+  const mid = Math.floor(arr.length / 2),
+    nums = [...arr].sort((a, b) => a - b);
+  return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+};
+
 
 function avg(values){
 	var sum = 0;
@@ -78,7 +84,8 @@ function avg(values){
 function report(total){
 	var perconewins = (100*onewins/(onewins+twowins)).toFixed(1);
 	var perctwowins = (100-perconewins).toFixed(1);
+	var medianhands = median(hands);
 	console.log("hand one wins "+perconewins+"%, two wins " + perctwowins+ "%");
 	console.log("wars "+warstotal+"/"+total + ", double wars "+doublewarstotal+"/"+ total+ ", "+"triple wars "+triplewarstotal+"/"+total);
-	console.log("median plays: "+median(hands)+", average plays: "+avg(hands));
+	console.log("median plays: " + medianhands+", average plays: "+avg(hands));
 }
