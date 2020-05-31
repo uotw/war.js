@@ -1,6 +1,13 @@
 # war.js
 node simulation of classic card game war
 
+# purpose
+This node application was written to easily and quickly simulate many hands of the children's card game war. With the simulation you can collect winning statistics for randomly dealt hands, hands where all aces end up in one otherwise random hand, and hands who have all face cards (including aces). Additionally, you can collect statistics on average plays to complete a hand given the above dealings. 
+
+The code assumes each war puts three additional cards face down (variable `warcards` in `war.js`, then turns up a fouth to challenge. One point that is not clear in customary war rules is how a game ends if a player doesn't have enough cards to complete a war. In this circumstance, this simulation turns up the player's last card no matter how many have been put face down. The challenger matches the number of at risk cards for this potential final war.
+
+One last note - when cards are returned to the hand of the winner, this code shuffles them. It's not clear that this must be done in the typical war rules, but it ends up happening anyway depending on how they are picked up. Shuffling the cards essentially ensures that there will never been an infinite game [citation](https://arxiv.org/abs/1007.1371), which is theoretically possible if the cards are taken in a specific order [citation](https://mathoverflow.net/questions/11503/does-war-have-infinite-expected-length).
+
 ## install
 * `git clone https://github.com/uotw/war.js.git`
 * `cd war.js`
