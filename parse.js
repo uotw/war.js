@@ -24,7 +24,7 @@ function processData(item,index) {
 	if(item.length>2){
 		//console.log(item);
 		var winner = item[0];
-		console.log(item[1]);
+		//console.log(item[1]);
 		hands.push(item[1]);
 		var wars = item[2];
 		var doublewars = item[3];
