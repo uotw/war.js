@@ -2,7 +2,7 @@
 node simulation of classic card game war
 
 ## purpose
-This node application was written to easily and quickly simulate many hands of the children's card game war. With the simulation you can collect winning statistics for randomly dealt hands, hands where all aces end up in one otherwise random hand, and hands who have all face cards (including aces). Additionally, you can collect statistics on average plays to complete a hand given the above dealings. 
+This node application was written to easily and quickly simulate many hands of the children's card game war. With the simulation can collect winning statistics for randomly dealt hands, hands where all aces end up in one otherwise random hand, and hands who have all face cards (including aces). Additionally, it can collect statistics on average plays to complete a hand given the above dealings. 
 
 The code assumes each war puts three additional cards face down (variable `warcards` in `war.js`), then turns up a fouth to challenge. One point that is not clear in customary war rules is how a game ends if a player doesn't have enough cards to complete a war. In this circumstance, this simulation turns up the player's last card no matter how many have been put face down. The challenger matches the number of at risk cards for this potential final war.
 
