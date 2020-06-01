@@ -26,14 +26,15 @@ speed scales by the number of iterations requested; 10,000 iterations run with m
 * 55 seconds Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz (14 cores)
 
 ## statistics
+1,000,000 iterations were run showing the following statistics:
 
 * 97%	chance of winning if you have all face cards
 * 80%	chance of winning if you have 4 aces
 * 64%	chance of winning if you have 3 aces
 * 54%	games have at least 1 double war
 * 4%	games have at least 1 triple war
-* 0.03%	games will end without even a single war
-* 250	average plays to win
-* 189	median plays to win
+* 0.0137%	(137/million) games will end without even a single war
+* 249	average plays to win
+* 190	median plays to win
 
 ![histogram of plays to win war](https://www.sonoclipshare.com/playstowin.svg)
