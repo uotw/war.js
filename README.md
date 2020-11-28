@@ -9,6 +9,7 @@ The code assumes each war puts three additional cards face down (variable `warca
 One last note - when cards are returned to the hand of the winner, this code shuffles them. It's not clear that this must be done in the typical war rules, but it ends up happening anyway depending on how they are picked up. Shuffling the cards essentially ensures that there will never been an infinite game [[citation](https://arxiv.org/abs/1007.1371)], which is theoretically possible if the cards are taken in a specific order [[citation](https://mathoverflow.net/questions/11503/does-war-have-infinite-expected-length)].
 
 ## install
+* you must first [install Node](https://nodejs.org/en/download/)
 * `git clone https://github.com/uotw/war.js.git`
 * `cd war.js`
 * `npm i`
