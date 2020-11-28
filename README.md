@@ -26,7 +26,7 @@ speed scales by the number of iterations requested; 10,000 iterations run with m
 * 55 seconds Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz (14 cores)
 
 ## statistics
-1,000,000 iterations were run showing the following statistics:
+1,000,000 random game iterations were run showing the following statistics:
 
 * 97%	chance of winning if you have all face cards
 * 80%	chance of winning if you have 4 aces
