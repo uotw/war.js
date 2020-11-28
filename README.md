@@ -33,7 +33,7 @@ speed scales by the number of iterations requested; 10,000 iterations run with m
 * 64%	chance of winning if you have 3 aces
 * 54%	games have at least 1 double war
 * 4%	games have at least 1 triple war
-* 0.0137%	(137/million) games will end without even a single war
+* 0.0137%	(~1/7300) games will end without even a single war
 * 249	average plays to win
 * 190	median plays to win
 
